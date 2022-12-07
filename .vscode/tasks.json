@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "SwitchBot get devices",
+            "type": "shell",
+            "command": "/bin/bash /home/loft/xxxx/get-devices.sh",
+            "windows": {
+                "command": "echo dummy"
+            }
+        },
+        {
+            "label": "SwitchBot get meter",
+            "type": "shell",
+            "command": "/bin/bash /home/loft/xxxx/get-meter.sh",
+            "windows": {
+                "command": "echo dummy"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "SwitchBot turnOn TV",
+            "type": "shell",
+            "command": "/bin/bash /home/loft/xxxx/tv.sh turnOn",
+            "windows": {
+                "command": "echo dummy"
+            }
+        }
+        ,
+        {
+            "label": "SwitchBot turnOff TV",
+            "type": "shell",
+            "command": "/bin/bash /home/loft/xxxx/tv.sh turnOff",
+            "windows": {
+                "command": "echo dummy"
+            }
+        },
+        {
+            "label": "SwitchBot turnOn Air Conditioner",
+            "type": "shell",
+            "command": "/bin/bash /home/loft/xxxx/air-conditioner.sh turnOn",
+            "windows": {
+                "command": "echo dummy"
+            }
+        }
+        ,
+        {
+            "label": "SwitchBot turnOff Air Conditioner",
+            "type": "shell",
+            "command": "/bin/bash /home/loft/xxxx/air-conditioner.sh turnOff",
+            "windows": {
+                "command": "echo dummy"
+            }
+        }
+    ]
+}

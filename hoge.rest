@@ -1,0 +1,95 @@
+### デバイス一覧 取得
+
+GET https://api.switch-bot.com/v1.1/devices
+Authorization: xxxxxxxxxx
+t: 1670406247880
+sign: SjxEjvXjlVkKK/NoG8yvvyz6yeLOk8cfR5/08nYN0VE=
+nonce: hogehoge
+
+### 温湿度計 status
+
+GET https://api.switch-bot.com/v1.1/devices/xxxxxxxx/status
+Authorization: xxxxxxxxxx
+t: 1670400623340
+sign: Uc+XGz4bSbMRvpFv/Y4qFZtSMUaim1dxJxikIlKz0qA=
+nonce: hogehoge
+
+### テレビ turnOn
+
+POST https://api.switch-bot.com/v1.1/devices/xxxxxxxx/commands
+Authorization: xxxxxxxxxx
+t: 1670405322400
+sign: XqmjRmV0iQdlDLm5EZdDLofqV76+rK4BhG7XJVoyqvw=
+nonce: hogehoge
+
+{
+    "command": "turnOn",
+    "commandType": "command"
+}
+
+### テレビ turnOff
+
+POST https://api.switch-bot.com/v1.1/devices/xxxxxxxx/commands
+Authorization: xxxxxxxxxx
+t: 1670405708840
+sign: bnGibK4ksU6ZIJX15MIWTq+ffzNy4k+5OQOFhBPmecg=
+nonce: hogehoge
+
+{
+    "command": "turnOff",
+    "commandType": "command"
+}
+
+### テレビ SetChannel
+
+POST https://api.switch-bot.com/v1.1/devices/xxxxxxxx/commands
+Authorization: xxxxxxxxxx
+t: 1670392105922
+sign: h7sWsq9aT4heo2qNsk47Oxva8W9Y3I5OKPHmWLElNes=
+nonce: hogehoge
+
+{
+    "command": "SetChannel",
+    "parameter": "2",
+    "commandType": "command"
+}
+
+### エアコン turnOn
+
+POST https://api.switch-bot.com/v1.1/devices/xxxxxxx/commands
+Authorization: xxxxxxxxxx
+t: 1670392105922
+sign: h7sWsq9aT4heo2qNsk47Oxva8W9Y3I5OKPHmWLElNes=
+nonce: hogehoge
+
+{
+    "command": "turnOn",
+    "commandType": "command"
+}
+
+### エアコン turnOff
+
+POST https://api.switch-bot.com/v1.1/devices/xxxxxxx/commands
+Authorization: xxxxxxxxxx
+t: 1670392105922
+sign: h7sWsq9aT4heo2qNsk47Oxva8W9Y3I5OKPHmWLElNes=
+nonce: hogehoge
+
+{
+    "command": "turnOff",
+    "commandType": "command"
+}
+
+### エアコン モード設定
+
+POST https://api.switch-bot.com/v1.1/devices/xxxxxxxx/commands
+Authorization: xxxxxxxxxx
+t: 1670391470669
+sign: yNsWQW5GyyWT90g8CpJehRKv1HuwIDz4aN3JSAXV7ns=
+nonce: hogehoge
+
+{
+    "command": "setAll",
+    "parameter": "26,5,3,off",
+    "commandType": "command"
+}
